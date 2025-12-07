@@ -85,3 +85,15 @@ This template comes with [Tailwind CSS](https://tailwindcss.com/) already config
 ---
 
 Built with ❤️ using React Router.
+
+## Dev Container használata
+
+A projekt tartalmaz egy VS Code / GitHub Codespaces kompatibilis Dev Container konfigurációt a `.devcontainer` mappában.
+
+### Indítás VS Code-ban
+
+1. Klónozd a repót:
+   ```bash
+   git clone https://github.com/horvathda/a18dpg-devops.git
+   cd a18dpg-devops
+   ```
