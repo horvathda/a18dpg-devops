@@ -16,7 +16,7 @@ export function Welcome() {
 
         <div className='text' >
 
-          <p>Szöveg helye</p>
+          <p>Ez az alkalmazás a GDE DevOps kurzusához készült.</p>
 
         </div>
       </div>
