@@ -7,7 +7,7 @@ export function Welcome() {
       <div className="App">
         <div className='title'>
 
-          <img src="" alt="GDE Logo" width="200" />
+          <img src="./GDE_logo_feher.png" alt="GDE Logo" width="200" />
 
           <h1> Hello DevOps! </h1>
 
