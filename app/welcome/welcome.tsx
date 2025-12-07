@@ -9,14 +9,14 @@ export function Welcome() {
 
           <img src="" alt="GDE Logo" width="200" />
 
-          <h1>Cím helye</h1>
+          <h1> Hello DevOps! </h1>
 
 
         </div>
 
         <div className='text' >
 
-          <p>Szöveg helye</p>
+          <p>Ez az alkalmazás a GDE DevOps kurzusához készült.</p>
 
         </div>
       </div>
