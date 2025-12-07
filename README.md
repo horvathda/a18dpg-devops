@@ -86,14 +86,79 @@ This template comes with [Tailwind CSS](https://tailwindcss.com/) already config
 
 Built with ❤️ using React Router.
 
-## Dev Container használata
+# a18dpg-devops
 
-A projekt tartalmaz egy VS Code / GitHub Codespaces kompatibilis Dev Container konfigurációt a `.devcontainer` mappában.
+Ez a repo a DEVOPS tárgy beadandó projektfeladatához készült.  
+A projekt egy egyszerű, „Hello world” szintű webes alkalmazás (Vite + React), amely HTTP-n érhető el, és tartalmazza a feladatban elvárt DevOps lépéseket:
 
-### Indítás VS Code-ban
+- kódkészítés
+- verziókövetés (Git, trunk-based jellegű használat)
+- buildelés
+- konténerizálás (Docker)
+- kötelezően választandó rész: **Dev Container (VS Code / GitHub Codespaces)**
 
-1. Klónozd a repót:
-   ```bash
+---
+
+## 1. Alkalmazás
+
+Az alkalmazás egy egyszerű frontend app, amely böngészőből érhető el HTTP-n keresztül, és egy „Hello world” jellegű oldalt jelenít meg.
+
+Lokálisan (Docker nélkül) a fejlesztői szerver a következő címen érhető el:
+
+- `http://localhost:5173`
+
+---
+
+## 2. Buildelés (kötelező rész)
+
+A buildhez Node.js és npm szükséges.
+
+### 2.1. Előfeltételek
+
+- Node.js (ajánlott: aktuális LTS)
+- npm
+- Git
+
+### 2.2. Lépések
+
+```bash
+git clone https://github.com/horvathda/a18dpg-devops.git
+cd a18dpg-devops
+
+# Függőségek telepítése
+npm install
+
+# Build
+npm run build
+
+
+# 3. Dev Container használata (kötelezően választható rész – opció 1)
+   A projekt tartalmaz egy VS Code Dev Container konfigurációt a .devcontainer mappában, amely egy egységes, konténeres fejlesztői környezetet biztosít.
+
+#3.1. Indítás VS Code-ban
+   Előfeltételek:
+
+   Docker Desktop (futó állapotban)
+
+   Visual Studio Code
+
+   Dev Containers bővítmény
+
+#Lépések:
+
+   Klónozd a repót:
+
    git clone https://github.com/horvathda/a18dpg-devops.git
    cd a18dpg-devops
-   ```
+   Nyisd meg a mappát Visual Studio Code-ban.
+
+   A bal alsó sarokban kattints a duplanyíl ikonra, és válaszd a
+   „Reopen in Container” opciót
+
+   A konténer felépülése után futtasd:
+
+   npm install
+   npm run dev
+
+´´´
+```
